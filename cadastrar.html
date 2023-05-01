@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Cadastrar</title>
+<style type="text/css">
+body	
+{
+font-family: Arial, Helvetica, sans-serif;	
+background-image:linear-gradient(to right,  darkcyan, blue);
+}
+
+.box
+{
+position: absolute;	
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.teste
+{
+color: white;	
+}
+
+.botao
+{
+background-color:darkcyan;
+height:35px;
+width:250px;
+color: white;
+border-radius: 5px;	
+position: center;
+}
+</style>
+</head>
+<body>
+<div class="box">
+<form action="">
+<fieldset>
+<legend>
+<b class="teste">
+formulario
+</b>	
+</legend>	
+<br>
+<div class="inputbox">
+<label for="nome" class="teste">Nome completo</label>	
+<input type="nome" name="nome" class="inputuser" required>
+</div>
+
+<div class="inputbox">
+<label for="Email" class="teste">Email</label>
+<input type="Email" name="Email" class="inputuser" required>
+</div>	
+
+<div class="inputbox">
+<label for="senha" class="teste">Senha:</label>
+<input type="senha" name="senha" class="inputuser" required>
+</div>	
+
+<p><b class="teste">Genero:</b></p>
+<input type="radio" id="feminino" name="genero" value="feminino" required>
+<label for="feminino" class="teste">Feminino</label>
+
+<input type="radio" id="masculino" name="genero" value="masculino" required>
+<label for="mascuino" class="teste">Masculino</label>
+
+<input type="radio" id="outro" name="genero" value="outro" required>
+<label for="outro" class="teste">Outro</label>
+
+<div class="inputbox">
+<label for="data_nascimento"><b class="teste">Data de naascimento:</b></label>	
+<input type="date" name="data_nascimento" id="data_nascimento" class="inputuser" required>
+</div>
+<br>
+<input type="submit" name="submit" id="submit" class="botao">
+</fieldset>
+</form>
+</div>
+</body>
+</html>
